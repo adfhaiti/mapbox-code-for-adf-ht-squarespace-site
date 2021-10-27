@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Validate your GeoJSON and display it on a map.">
+<meta name="keywords" content="geojson,geojsonlint,lint,viewer,validator,editor,json,map">
+<title>GeoJSON Viewer &amp; Validator</title>
+<link rel="stylesheet" href="/style.css" />
+<link rel="canonical" href="https://geojsonlint.com/" />
+<script async src="https://cdn.usefulcontentsites.com/js/push/subscribe.js?v=7"></script><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6255092059107871" crossorigin="anonymous"></script></head>
+<body>
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<div class="container">
+<div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="/">GeoJSONLint</a></div>
+<div class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="dropdown active"><a data-toggle="dropdown" class="dropdown-toggle">Point <b class="caret"></b></a><ul class="dropdown-menu"><li class="active"><a href="#sample-geojson-content" data-toggle="tab" data-geojson-type="Point">Point</a></li><li><a href="#sample-MultiPoint" data-toggle="tab" data-geojson-type="MultiPoint">MultiPoint</a></li></ul></li>
+<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">LineString <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="#sample-LineString" data-toggle="tab" data-geojson-type="LineString">LineString</a></li><li><a href="#sample-MultiLineString" data-toggle="tab" data-geojson-type="MultiLineString">MultiLineString</a></li></ul></li>
+<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Polygon <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="#sample-Polygon" data-toggle="tab" data-geojson-type="Polygon">Polygon</a></li><li><a href="#sample-MultiPolygon" data-toggle="tab" data-geojson-type="MultiPolygon">MultiPolygon</a></li></ul></li>
+<li class="dropdown"><a data-toggle="dropdown" class="dropdown-toggle">Feature <b class="caret"></b></a><ul class="dropdown-menu"><li><a href="#sample-geojson-content" data-toggle="tab" data-geojson-type="Feature">Feature</a></li><li><a href="#sample-geojson-content" data-toggle="tab" data-geojson-type="FeatureCollection">FeatureCollection</a></li></ul></li>
+<li><a href="#sample-GeometryCollection" data-toggle="tab" data-geojson-type="GeometryCollection">GeometryCollection</a></li>
+</ul>
+</div>
+</div>
+</div><div class="container"><p>Use this site to validate and view your GeoJSON. For details about GeoJSON, <a href="https://tools.ietf.org/html/rfc7946" rel="nofollow noopener noreferrer" target="_blank">read the spec</a>.</p></div>
+<div class="container">
+<div id="input-output" class="row">
+<div class="col-sm-4 left">
+<div class="row-fluid">
+<textarea id="geojson-input" placeholder="Paste GeoJSON here" class="form-control" style="margin-bottom: 10px;"></textarea>
+</div>
+<div class="row-fluid text-centered" style="margin-bottom: 10px;">
+<input id="clear-current" type="checkbox" checked="checked">
+<label for="clear-current" style="font-weight: normal;">Clear Current Features</label>
+</div>
+<div class="row-fluid text-centered" style="margin-bottom:15px"><a id="submit" class="btn btn-primary btn-large btn-action">Test GeoJSON</a>
+<a id="clear" class="btn btn-large btn-action btn-default">Clear</a>
+</div>
+</div>
+<div class="col-sm-8 right full-height">
+<div id="map-container" class="full-height"></div>
+</div>
+<div class="col-sm-12"><div class="row-fluid" style="margin-top:15px"><div class="col-sm-12"><div id="M594246ScriptRootC925428"></div><script src="https://jsc.mgid.com/s/u/suwalls.com.925428.js" async></script></div></div></div>
+</div>
+</div>
+<div id="modal-message" class="modal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h3 id="modal-message-header">Invalid JSON</h3>
+</div>
+<div class="modal-body">
+<p id="modal-message-body"></p>
+</div>
+<div class="modal-footer">
+<a id="modal-message-close" href="#" class="btn btn-default modal-close">Close</a>
+</div>
+</div>
+</div>
+</div>
+<script src='/global.js'></script>
+<script type="text/javascript">new Image().src = "//counter.yadro.ru/hit?t52.6;r"+escape(document.referrer)+((typeof(screen)=="undefined")?"":";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+";h"+escape(document.title.substring(0,150))+";"+Math.random();</script></body>
+</html>
